@@ -125,7 +125,7 @@
                 return;
             }
 
-            const result = await fetch(`/recipes/${recipeFile}.md`);
+            const result = await fetch(`./recipes/${recipeFile}.md`);
             return result.text();
         }
 
