@@ -7,9 +7,9 @@
     <meta name="robots" content="noindex">
     <title>Rezepte</title>
 
-    <script src="./libs/markdown-it.min.js"></script>
-    <link rel="stylesheet" href="./libs/modern-normalize.min.css">
-    <link rel="stylesheet" href="./libs/water.light.min.css">
+    <script src="libs/markdown-it.min.js"></script>
+    <link rel="stylesheet" href="libs/modern-normalize.min.css">
+    <link rel="stylesheet" href="libs/water.light.min.css">
 
     <style>
         .container {
@@ -130,7 +130,7 @@
         }
 
         async function loadRecipeList() {
-            const result = await fetch(`/recipes.md`);
+            const result = await fetch(`./recipes.md`);
             return result.text();
         }
 
